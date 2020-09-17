@@ -1,4 +1,4 @@
-# Flutter Travel UI
+# Flutter Travel
 
 A new Flutter project.
 
