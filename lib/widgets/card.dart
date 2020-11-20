@@ -39,8 +39,8 @@ class CardItem extends StatelessWidget {
               Hero(
                 tag: imgPath,
                 child: Container(
-                  height: 80.0,
-                  width: 80.0,
+                  height: 90.0,
+                  width: 90.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5.0),
                     image: DecorationImage(
@@ -60,7 +60,7 @@ class CardItem extends StatelessWidget {
                     Text(
                       country,
                       style: TextStyle(
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w900,
                       ),
                     ),
                     Text(
@@ -74,14 +74,14 @@ class CardItem extends StatelessWidget {
                         Text(
                           '$price/',
                           style: TextStyle(
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w900,
                           ),
                         ),
                        
                         Text(
-                          'Day',
+                          'Night',
                           style: TextStyle(
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w900,
                           ),
                         ),
                       ],

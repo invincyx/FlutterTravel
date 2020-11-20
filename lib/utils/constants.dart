@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
 
-class Constants{
-
+class Constants {
   //App related strings
   static String appName = "Travel App";
 
-
   //Colors for theme
-  static Color lightPrimary = Color(0xfff3f4f9);
+  static Color lightPrimary = Colors.white;
   static Color darkPrimary = Colors.black;
   static Color lightAccent = Colors.orange;
   static Color darkAccent = Colors.orange;
-  static Color lightBG = Color(0xfff3f4f9);
+  static Color lightBG = Colors.white;
   static Color darkBG = Colors.black;
 
   static ThemeData lightTheme = ThemeData(
     backgroundColor: lightBG,
     primaryColor: lightPrimary,
     fontFamily: 'Ubuntu-Regular',
-    accentColor:  lightAccent,
+    accentColor: lightAccent,
     cursorColor: lightAccent,
     scaffoldBackgroundColor: lightBG,
     appBarTheme: AppBarTheme(
@@ -52,7 +50,6 @@ class Constants{
       ),
     ),
   );
-
 
   static List<T> map<T>(List list, Function handler) {
     List<T> result = [];

@@ -32,14 +32,14 @@ class _DetailScreenState extends State<DetailScreen> {
               children: <Widget>[
                 Icon(
                   CupertinoIcons.bell,
-                  size: 30,
+                  size: 30.0,
                 ),
                 Positioned(
-                  top: 8,
-                  right: 3,
+                  top: 8.0,
+                  right: 3.0,
                   child: Container(
-                    height: 10,
-                    width: 10,
+                    height: 10.0,
+                    width: 10.0,
                     decoration: BoxDecoration(
                       color: Colors.red,
                       shape: BoxShape.circle,
@@ -52,17 +52,17 @@ class _DetailScreenState extends State<DetailScreen> {
         ],
       ),
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal:10.0),
+        padding: EdgeInsets.symmetric(horizontal: 10.0),
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.symmetric(vertical:10.0),
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: Hero(
               tag: widget.imgPath,
               child: Container(
                 height: 250,
                 width: MediaQuery.of(context).size.width - 30,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
                     image: AssetImage(widget.imgPath),
                     fit: BoxFit.cover,
@@ -80,7 +80,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   widget.country,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 22,
+                    fontSize: 22.0,
                   ),
                 ),
                 Spacer(),
@@ -89,7 +89,7 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal:5.0),
+            padding: const EdgeInsets.symmetric(horizontal: 5.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -98,7 +98,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   widget.place,
                   style: TextStyle(
                     color: Theme.of(context).accentColor,
-                    fontSize: 18,
+                    fontSize: 18.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

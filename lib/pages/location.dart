@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:travel_ui/widgets/appbar.dart';
 import 'package:travel_ui/widgets/listItems.dart';
 import 'package:travel_ui/widgets/card.dart';
@@ -12,7 +13,7 @@ class _LocationState extends State<Location> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: header(context),
+     // appBar: header(context),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal:10.0),
         child: Column(
@@ -34,6 +35,40 @@ class _LocationState extends State<Location> {
                 ),
               ),
             ),
+            Container(
+              height: 50.0,
+              width: MediaQuery.of(context).size.width - 60.0,
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(15.0),
+              ),
+              child: Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Icon(
+                      Feather.search,
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(width: 10.0),
+                  Flexible(
+                    child: Theme(
+                      data: ThemeData(primaryColor: Colors.black),
+                      child: TextField(
+                        cursorColor: Theme.of(context).accentColor,
+                        decoration: InputDecoration.collapsed(
+                          hintText: 'Search for a trip',
+                          hintStyle: TextStyle(
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
             Flexible(
               child: Container(
                 child: ListView(
@@ -42,7 +77,7 @@ class _LocationState extends State<Location> {
                     Column(
                       children: <Widget>[
                         Container(
-                          height: 260.0,
+                          height: 265.0,
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             physics: AlwaysScrollableScrollPhysics(),
@@ -71,7 +106,7 @@ class _LocationState extends State<Location> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20.0, right: 15.0),
+                          padding: const EdgeInsets.only(left: 20.0, right: 15.0,top:5.0),
                           child: Row(
                             children: <Widget>[
                               Text(
@@ -96,20 +131,20 @@ class _LocationState extends State<Location> {
                         CardItem(
                             imgPath: 'assets/images/country/china.jpg',
                             place: 'Harbin Snow and Ice',
-                            price: '€4750 ',
+                            price: '£600',
                             country: 'China'),
                             Divider(),
                         CardItem(
                             imgPath: 'assets/images/country/nigeria.jpg',
                             place: 'Victoria Island Lagos',
-                            price: '€2000 ',
+                            price: '£350',
                             country: 'Nigeria'),
                                                       Divider(),
 
                         CardItem(
                             imgPath: 'assets/images/country/beninRb.jpg',
                             place: 'L\'hotel Marina, Cotonou',
-                            price: '€475 ',
+                            price: '£475',
                             country: 'Benin Republic '),
                       ],
                     ),
