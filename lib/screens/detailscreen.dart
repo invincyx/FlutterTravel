@@ -137,18 +137,21 @@ class _DetailScreenState extends State<DetailScreen> {
 
   buildPrice() {
     if (widget.price != null) {
-      return Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(5),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Text('${widget.price}/ night',
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15,
-                  color: Colors.black)),
+      return Padding(
+        padding: const EdgeInsets.only(bottom:10.0),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Text('${widget.price} / Night',
+                style: TextStyle(
+                    fontWeight: FontWeight.w900,
+                    fontSize: 18,
+                    color: Colors.black)),
+          ),
         ),
       );
     } else {
