@@ -8,8 +8,7 @@ class Trips extends StatefulWidget {
 class _TripsState extends State<Trips> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-    );
+        return Center(child: Text('TRIPS'),);
+
   }
 }

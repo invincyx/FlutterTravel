@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:travel_ui/pages/favorite.dart';
@@ -17,6 +18,18 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: Icon(
+          Feather.menu,
+          size: 20.0,
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Feather.settings),
+            onPressed: () {},
+          )
+        ],
+      ),
       body: PageView(
         physics: NeverScrollableScrollPhysics(),
         controller: _pageController,
@@ -31,46 +44,37 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).primaryColor,
         selectedItemColor: Theme.of(context).accentColor,
-        // ignore: deprecated_member_use
-        unselectedItemColor: Theme.of(context).textTheme.title.color,
+        unselectedItemColor: Theme.of(context).textTheme.headline6.color,
         elevation: 3.0,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.location_on,
+              CupertinoIcons.bookmark,
               size: 25,
             ),
-            title: Text(
-              "Location",
-            ),
+            label: "Places",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Feather.heart,
+              CupertinoIcons.heart,
               size: 20,
             ),
-            title: Text(
-              "Favorite",
-            ),
+            label: "Favorite",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.book,
+              CupertinoIcons.book,
               size: 20,
             ),
-            title: Text(
-              "Trips",
-            ),
+            label: "Trips",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.person_outline,
+              CupertinoIcons.person,
               size: 30,
             ),
-            title: Text(
-              "Profiles",
-            ),
+            label: "Profile",
           ),
         ],
         onTap: navigationTapped,

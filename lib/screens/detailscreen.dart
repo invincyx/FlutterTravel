@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_ui/widgets/starItem.dart';
 
@@ -18,17 +19,23 @@ class _DetailScreenState extends State<DetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.keyboard_backspace, size: 30.0),
+        ),
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Stack(
               children: <Widget>[
                 Icon(
-                  Icons.notifications,
-                  size: 28,
+                  CupertinoIcons.bell,
+                  size: 30,
                 ),
                 Positioned(
-                  top: 5,
+                  top: 8,
                   right: 3,
                   child: Container(
                     height: 10,
@@ -45,9 +52,10 @@ class _DetailScreenState extends State<DetailScreen> {
         ],
       ),
       body: ListView(
+        padding: EdgeInsets.symmetric(horizontal:10.0),
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.symmetric(vertical:10.0),
             child: Hero(
               tag: widget.imgPath,
               child: Container(
@@ -65,7 +73,7 @@ class _DetailScreenState extends State<DetailScreen> {
           ),
           Padding(
             padding: const EdgeInsets.only(
-                top: 20.0, left: 20, right: 20, bottom: 10),
+                top: 20.0, left: 5.0, right: 5.0, bottom: 5.0),
             child: Row(
               children: <Widget>[
                 Text(
@@ -81,7 +89,7 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.symmetric(horizontal:5.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -90,27 +98,25 @@ class _DetailScreenState extends State<DetailScreen> {
                   widget.place,
                   style: TextStyle(
                     color: Theme.of(context).accentColor,
-                    fontSize: 15,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 15.0),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 10.0),
                   child: Text(
                     'Details',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                 ),
                 Text(
-                  'Lorem ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ullamcorper pretium Lorem ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ullamcorper pretium a vitae risus. ',
+                  'Lorem ipsum dolor sit. In a lorem tellus.ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus  ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus curpis eget, fermentum est. Morbi in diam eget tellus ullamcorper pretium Lorem ipsum dolor sit. In a lorem tellus. curpis eget, fermentum est. Morbi in diam eget tellus ullamcorper pretium a vitae risus. ',
                   style: TextStyle(
-                    //color: Theme.of(context).accentColor,
-                    fontSize: 16,
-                    // fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 10.0),
                 buildPrice(),
               ],
             ),
@@ -122,6 +128,7 @@ class _DetailScreenState extends State<DetailScreen> {
         onPressed: () {},
         child: Icon(
           Icons.flight,
+          size: 30.0,
           color: Colors.black,
         ),
       ),

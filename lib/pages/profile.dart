@@ -8,8 +8,7 @@ class Profiles extends StatefulWidget {
 class _ProfilesState extends State<Profiles> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-    );
+        return Center(child: Text('PROFILE'),);
+
   }
 }
