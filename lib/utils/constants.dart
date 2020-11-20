@@ -7,8 +7,8 @@ class Constants {
   //Colors for theme
   static Color lightPrimary = Colors.white;
   static Color darkPrimary = Colors.black;
-  static Color lightAccent = Colors.orange;
-  static Color darkAccent = Colors.orange;
+  static Color lightAccent = Colors.red;
+  static Color darkAccent = Colors.red;
   static Color lightBG = Colors.white;
   static Color darkBG = Colors.black;
 

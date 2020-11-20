@@ -51,21 +51,21 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(
               CupertinoIcons.bookmark,
-              size: 25,
+              size: 30,
             ),
             label: "Places",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               CupertinoIcons.heart,
-              size: 20,
+              size: 30,
             ),
             label: "Favorite",
           ),
           BottomNavigationBarItem(
             icon: Icon(
               CupertinoIcons.book,
-              size: 20,
+              size: 30,
             ),
             label: "Trips",
           ),

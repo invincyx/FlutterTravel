@@ -60,7 +60,8 @@ class CardItem extends StatelessWidget {
                     Text(
                       country,
                       style: TextStyle(
-                        fontWeight: FontWeight.w900,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
@@ -74,6 +75,7 @@ class CardItem extends StatelessWidget {
                         Text(
                           '$price/',
                           style: TextStyle(
+                            fontSize: 16.0,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
@@ -81,6 +83,7 @@ class CardItem extends StatelessWidget {
                         Text(
                           'Night',
                           style: TextStyle(
+                            fontSize: 16.0,
                             fontWeight: FontWeight.w900,
                           ),
                         ),

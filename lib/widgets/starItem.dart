@@ -1,36 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_star_rating/smooth_star_rating.dart';
 
 class StarItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Icon(
-          Icons.star,
-          color: Colors.orange,
-          size: 15,
-        ),
-        Icon(
-          Icons.star,
-          color: Colors.orange,
-          size: 15,
-        ),
-        Icon(
-          Icons.star,
-          color: Colors.orange,
-          size: 15,
-        ),
-        Icon(
-          Icons.star,
-          color: Colors.orange,
-          size: 15,
-        ),
-        Icon(
-          Icons.star_border,
-          color: Colors.orange,
-          size: 15,
-        ),
-      ],
+    return SmoothStarRating(
+      allowHalfRating: true,
+      onRated: (v) {},
+      starCount: 5,
+      rating: 4.5,
+      size: 17.0,
+      isReadOnly: true,
+      color: Colors.yellow[700],
+      borderColor: Colors.yellow[700],
+      spacing: 0.0,
     );
   }
 }

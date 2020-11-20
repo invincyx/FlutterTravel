@@ -13,9 +13,8 @@ class _LocationState extends State<Location> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     // appBar: header(context),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal:10.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,8 +23,8 @@ class _LocationState extends State<Location> {
               padding: const EdgeInsets.only(
                 left: 20.0,
                 right: 10.0,
-                top: 10.0,
-                bottom: 10.0,
+               
+                bottom: 20.0,
               ),
               child: Text(
                 'Where are you\nGoing ?',
@@ -37,9 +36,9 @@ class _LocationState extends State<Location> {
             ),
             Container(
               height: 50.0,
-              width: MediaQuery.of(context).size.width - 60.0,
+              width: MediaQuery.of(context).size.width - 20.0,
               decoration: BoxDecoration(
-                color: Colors.grey[300],
+                color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(15.0),
               ),
               child: Row(
@@ -69,6 +68,7 @@ class _LocationState extends State<Location> {
                 ],
               ),
             ),
+            SizedBox(height: 10.0),
             Flexible(
               child: Container(
                 child: ListView(
@@ -106,7 +106,8 @@ class _LocationState extends State<Location> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20.0, right: 15.0,top:5.0),
+                          padding: const EdgeInsets.only(
+                              left: 20.0, right: 15.0, top: 5.0),
                           child: Row(
                             children: <Widget>[
                               Text(
@@ -133,14 +134,13 @@ class _LocationState extends State<Location> {
                             place: 'Harbin Snow and Ice',
                             price: '£600',
                             country: 'China'),
-                            Divider(),
+                        Divider(),
                         CardItem(
                             imgPath: 'assets/images/country/nigeria.jpg',
                             place: 'Victoria Island Lagos',
                             price: '£350',
                             country: 'Nigeria'),
-                                                      Divider(),
-
+                        Divider(),
                         CardItem(
                             imgPath: 'assets/images/country/beninRb.jpg',
                             place: 'L\'hotel Marina, Cotonou',
