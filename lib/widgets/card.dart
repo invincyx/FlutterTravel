@@ -52,7 +52,7 @@ class CardItem extends StatelessWidget {
               ),
               SizedBox(width: 3.0),
               Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(5.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[

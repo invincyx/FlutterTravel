@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:travel_ui/widgets/appbar.dart';
 import 'package:travel_ui/widgets/listItems.dart';
 import 'package:travel_ui/widgets/card.dart';
 

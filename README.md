@@ -4,7 +4,8 @@ A new Flutter project.
 
 
 # 🔥🔥 Flutter Travel Ui [![Twitter Follow](https://img.shields.io/twitter/follow/CharlyKeleb.svg?style=social)](https://twitter.com/CharlyKeleb)
-Flutter representation of a Travel UI.
+Flutter representation of a Travel UI. 
+**It only consists of 2 screens.**
 
 Star⭐ the repo if you like what you see😉.
 
@@ -21,9 +22,8 @@ Star⭐ the repo if you like what you see😉.
 
 | Light| Dark|
 |------|-------|
-|<img src="ss/flutter_08.png" width="400">|<img src="ss/img6.jpg" width="400">|
-|<img src="ss/flutter_09.png" width="400">|<img src="ss/img1.jpg" width="400">|
-|<img src="ss/flutter_10.png" width="400">|<img src="ss/img5.jpg" width="400">|
+|<img src="ss/001.jpg" width="400">|<img src="ss/003.png" width="400">|
+|<img src="ss/002.png" width="400">|<img src="ss/004.png" width="400">|
 
 
 
